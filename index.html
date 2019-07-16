@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>PWA night 6 - Gridsome</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -41,7 +41,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h3><span class="no-transform">GridsomeのSSRで<br />Wordpressサイトを爆速に</span></h3>
+					<h3><span class="no-transform">Gridsomeでお手軽SSR</span></h3>
 					<p>
 						Takeshi Amano</a>
 					</p>
@@ -61,7 +61,8 @@
 				</section>
 
 				<section>
-					<p><img src="images/gridsomelogo.svg"</p>
+					<h3><span class="no-transform">Gridsome</span></h3>
+					<p><img class="plain" width="100" src="images/gridsomelogo.png"</p>
 					<p class="fragment">いろんなデータソースに繋がる</p>
 					<p class="fragment">VueJSベース</p>
 					<p class="fragment">追加設定無しでパフォーマンスアップ</p>
@@ -69,15 +70,8 @@
 
 				<section>
 					<h3><span class="no-transform">いろんなデータソースに繋がる<span></h3>
-					<p class="fragment"><strong>CMS</strong><br />
-						<small>Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc.</small>
-					</p>
-					<p class="fragment"><strong>Data</strong><br />
-						<small>Restful APIs, GraphQL, Databases, AirTable, YAML, CSV, JSON, etc.</small>
-					</p>
-					<p class="fragment"><strong>Markdown</strong><br />
-						<small>Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</small>
-					</p>
+					<p><img class="plain" src="images/connecttoany.png"</p>
+					<p class="fragment">ローカルのGraphQLでデータ取得</p>
 				</section>
 
 				<section>
@@ -90,19 +84,6 @@
 					<p class="fragment">5. Progressive Images 自動画像最適化とlazy loading</p>
 					<p class="fragment">6. Vue.js SPA ページリフレッシュなしの高速ロード</p>
 				</small>
-				</section>
-
-				<section>
-					<h3><span class="no-transform">いろんなデータソースに繋がる<span></h3>
-					<p class="fragment"><strong>CMS</strong><br />
-						<small>Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc.</small>
-					</p>
-					<p class="fragment"><strong>Data</strong><br />
-						<small>Restful APIs, GraphQL, Databases, AirTable, YAML, CSV, JSON, etc.</small>
-					</p>
-					<p class="fragment"><strong>Markdown</strong><br />
-						<small>Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</small>
-					</p>
 				</section>
 
 				<section>
@@ -150,9 +131,9 @@ module.exports = {
 				</section>
 
 				<section>
-					<h3><span class="no-transform">4. ビルド！<span></h3>
+					<h3><span class="no-transform">4. ビルド<span></h3>
 						<pre><code class="hljs" data-trim>
-							npm develop
+							gridsome develop
 						</code></pre>
 				</section>
 
@@ -163,7 +144,23 @@ module.exports = {
 
 				<section>
 					<h3><span class="no-transform">pwanext.com</h3>
-					<p class="fragment">PWA情報サイト</p>
+					<p><img src="images/pwanext.png"</p>
+				</section>
+
+				<section>
+					<h3><span class="no-transform">Pros<span></h3>
+					<p class="fragment">とにかく簡単にSSRできる</p>
+					<p class="fragment">NetlifyやS3などに置ける</p>
+					<p class="fragment">VueのUIテンプレートが使える</p>
+					<p class="fragment">Instagramとか他のデータソースと組み合わせ可能</p>
+				</section>
+
+				<section>
+					<h3><span class="no-transform">Cons<span></h3>
+					<p class="fragment">コンテンツ更新の度にビルドが必要</p>
+					<p class="fragment">まだバージョンが0.6.5とかで絶賛開発中</p>
+					<p class="fragment">プラグインがGatsbyに比べて少ない</p>
+					<p class="fragment">ダイナミックなサイトには向いてないかも</p>
 				</section>
 
 				<section>
